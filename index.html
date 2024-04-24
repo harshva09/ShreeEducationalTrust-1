@@ -118,7 +118,7 @@
     <div class="slider">
         <!-- Set up your HTML -->
         <div class="owl-carousel ">
-            <div class="slider-img">
+            <!-- <div class="slider-img">
                 <div class="item">
                     <div class="slider-img"><img src="assets/images/slider/slider-3.jpg" alt=""></div>
                     <div class="container">
@@ -136,9 +136,26 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="slider-img">
+                <div class="item">
+                    <div class="slider-img"><img id="uploadedImage_1" src="" alt=""></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                                <div class="animated bounceInDown slider-captions">
+                                    <h1 class="slider-title">Most Stylish Free Travel Website</h1>
+                                    <p class="slider-text hidden-xs">Lorem Ipsum is simply dummy text of the printing
+                                        and
+                                        typesetting industry. Lorem Ipsum has been the industry's</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="item">
-                <div class="slider-img"><img src="assets/images/slider/slider-1.jpg" alt=""></div>
+                <div class="slider-img"><img id="uploadedImage_2" src="" alt=""></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
@@ -153,7 +170,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="slider-img"><img src="assets/images/slider/slider-2.jpg" alt=""></div>
+                <div class="slider-img"><img id="uploadedImage_3" src="" alt=""></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
@@ -547,7 +564,19 @@
     </div>
 
 </body>
+<script>
+    // Retrieve the uploaded image URL from localStorage
+    const uploadedImageURL1 = localStorage.getItem('uploadedImage');
 
+    // Set the src attribute of the image element
+    document.getElementById('uploadedImage_1').src = uploadedImageURL1;
+
+    const uploadedImageURL2 = localStorage.getItem('uploadedImage_2');
+    document.getElementById('uploadedImage_2').src = uploadedImageURL2;
+
+    const uploadedImageURL3 = localStorage.getItem('uploadedImage_3');
+    document.getElementById('uploadedImage_3').src = uploadedImageURL3;
+</script>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
