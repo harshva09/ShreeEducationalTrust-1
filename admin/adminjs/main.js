@@ -5,7 +5,7 @@ import './contactRecords.js'; // Automatically executed for side effects
 
 onAuthStateChanged(auth, (user) => {
     if (!user) {
-        window.location.href = "login.html";
+        window.location.href = "../admin.html";
     }
 });
 
