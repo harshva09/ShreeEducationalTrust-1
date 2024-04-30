@@ -15,7 +15,7 @@ loginBtn.addEventListener('click', () => {
             // Signed in
             message.textContent = "Login successful!";
             setTimeout(() => {
-                window.location.href = "../admin.html"; // Redirect to admin page
+                window.location.href = "admin.html"; // Redirect to admin page
             }, 1000);
         })
         .catch((error) => {

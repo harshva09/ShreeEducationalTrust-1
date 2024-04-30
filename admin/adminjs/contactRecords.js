@@ -8,7 +8,7 @@ function renderTableRows(data) {
     for (const key in data) {
         const record = data[key];
         const row = `
-            <tr class="align-items-left justify-content-left">
+            <tr class="align-items-left">
                 <td>${record.name}</td>
                 <td>${record.phonenumber}</td>
                 <td>${record.email}</td>
